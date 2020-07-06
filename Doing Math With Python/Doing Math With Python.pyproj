@@ -1,0 +1,113 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>4e6a1667-ceb6-400d-a409-b8397d515c89</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>main.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Doing Math With Python</Name>
+    <RootNamespace>Doing Math With Python</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="addon_code\console.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chapter2\Enhaced_Projectile_Trajectory_Comparison_Program\program.py" />
+    <Compile Include="chapter2\Enhaced_Projectile_Trajectory_Comparison_Program\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chapter2\Explorig_the_Relationship_Between_the_Fibonacci_Sequence_and_the_Golden_Ratio\program.py" />
+    <Compile Include="chapter2\Explorig_the_Relationship_Between_the_Fibonacci_Sequence_and_the_Golden_Ratio\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chapter2\Exploring_a_Quadratic_Function_Visually\program.py" />
+    <Compile Include="chapter2\Exploring_a_Quadratic_Function_Visually\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chapter2\How_Does_the_Temperature_Vary_During_the_Day\program.py" />
+    <Compile Include="chapter2\How_Does_the_Temperature_Vary_During_the_Day\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chapter2\Visualizing_Your_Expenses\program.py" />
+    <Compile Include="chapter1\Enhanced_Unit_Converter\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chapter1\Enhanced_Multiplication_Table_Generator\program.py" />
+    <Compile Include="chapter1\Enhanced_Unit_Converter\program.py" />
+    <Compile Include="chapter1\Enhanced_Multiplication_Table_Generator\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chapter1\Even_Odd_Vending_Machine\program.py" />
+    <Compile Include="chapter1\Even_Odd_Vending_Machine\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chapter1\Fraction_Calculator\program.py" />
+    <Compile Include="chapter1\Fraction_Calculator\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chapter1\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="addon_code\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chapter2\Visualizing_Your_Expenses\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chapter2\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chapter3\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="main.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="chapter2\" />
+    <Folder Include="chapter2\Enhaced_Projectile_Trajectory_Comparison_Program\" />
+    <Folder Include="chapter2\Explorig_the_Relationship_Between_the_Fibonacci_Sequence_and_the_Golden_Ratio\" />
+    <Folder Include="chapter2\Exploring_a_Quadratic_Function_Visually\" />
+    <Folder Include="chapter2\How_Does_the_Temperature_Vary_During_the_Day\" />
+    <Folder Include="chapter2\Visualizing_Your_Expenses\" />
+    <Folder Include="chapter1\" />
+    <Folder Include="chapter1\Enhanced_Multiplication_Table_Generator\" />
+    <Folder Include="chapter1\Enhanced_Unit_Converter\" />
+    <Folder Include="chapter1\Even_Odd_Vending_Machine\" />
+    <Folder Include="chapter1\Fraction_Calculator\" />
+    <Folder Include="addon_code\" />
+    <Folder Include="chapter3\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.8</Version>
+      <Description>env (Python 3.8 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
